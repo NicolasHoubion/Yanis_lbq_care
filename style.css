@@ -429,7 +429,6 @@ body {
 }
 
 .engagement-quote::before {
-    content: '"';
     font-size: 4rem;
     position: absolute;
     top: -20px;
