@@ -240,3 +240,4 @@ document.addEventListener('DOMContentLoaded', function() {
         // Transition CSS pour l'ampersand
         amp.style.transition = 'all 0.3s ease';
     });
+});

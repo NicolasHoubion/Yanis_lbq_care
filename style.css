@@ -52,7 +52,7 @@ body {
 }
 
 .logo img {
-    height: 100px;
+    height: 65px;
     width: auto;
     transition: transform 0.3s ease;
 }
@@ -195,12 +195,10 @@ body {
 }
 
 .interior {
-    transform: translateY(-8px);
     color: var(--primary-color);
 }
 
 .exterior {
-    transform: translateY(8px);
     color: var(--primary-color);
 }
 
