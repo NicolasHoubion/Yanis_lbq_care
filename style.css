@@ -501,6 +501,62 @@ body {
     box-shadow: 0 10px 40px rgba(0, 217, 255, 0.2);
 }
 
+/* Blocs Réseaux Sociaux */
+.social-blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 15px;
+    background: rgba(0, 217, 255, 0.05);
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: var(--text-gray);
+    font-weight: 500;
+}
+
+.social-block svg {
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease;
+}
+
+.social-block span {
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.social-block:hover {
+    background: rgba(0, 217, 255, 0.1);
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 217, 255, 0.3);
+}
+
+.social-block:hover svg {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.social-block:hover span {
+    color: var(--primary-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .social-blocks {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Footer */
 .footer {
     background: var(--dark-bg);
