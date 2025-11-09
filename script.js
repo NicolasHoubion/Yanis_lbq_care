@@ -146,26 +146,26 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // ===== LAZY LOADING POUR LES IMAGES =====
-    const images = document.querySelectorAll('img[src]');
+    // // ===== LAZY LOADING POUR LES IMAGES =====
+    // const images = document.querySelectorAll('img[src]');
     
-    const imageObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                img.style.opacity = '0';
-                img.style.transition = 'opacity 0.5s ease';
+    // const imageObserver = new IntersectionObserver((entries, observer) => {
+    //     entries.forEach(entry => {
+    //         if (entry.isIntersecting) {
+    //             const img = entry.target;
+    //             img.style.opacity = '0';
+    //             img.style.transition = 'opacity 0.5s ease';
                 
-                img.onload = () => {
-                    img.style.opacity = '1';
-                };
+    //             img.onload = () => {
+    //                 img.style.opacity = '1';
+    //             };
                 
-                observer.unobserve(img);
-            }
-        });
-    });
+    //             observer.unobserve(img);
+    //         }
+    //     });
+    // });
     
-    images.forEach(img => imageObserver.observe(img));
+    // images.forEach(img => imageObserver.observe(img));
 
     // ===== EFFET DE TYPING POUR LE TITRE HERO (optionnel) =====
     // Vous pouvez décommenter cette section si vous voulez un effet de typing
